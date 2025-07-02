@@ -65,3 +65,15 @@
 
 ## DeepMind - PPO (和OpenAI同时提出)
 ## 应用于一些机器人.
+
+
+## Critic: Given actor θ,how good it is when observing s (and taking action a)
+## Value function Vθ(s): When using actor θ,the discounted cumulated reward expects to be obtained after seeing s
+## Value function的数值和观察的actor有关系.
+## Monte-Carlo(MC) based approach:玩了很多场游戏.看到s就知道Vθ了
+## Temporal-differnce(TD) approach:不用玩完正常游戏,只需要上下一点就可以更新Vθ的参数.
+
+##  Version 4
+## Advantage Actor-Critic
+
+# RL很吃运气,很看sample的怎么样
