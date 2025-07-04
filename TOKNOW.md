@@ -1,6 +1,6 @@
 ## 首先检查loss on training data,然后再检查loss on testing datas
 
-============================================
+---
 
 ## loss on training data Large
 
@@ -11,10 +11,10 @@
 
 - 这门课只用Gradient Descent.可能找到的不是Global minima
 
-## 怎么看是上面哪种情况呢 ?
-## solution：比较不同的模型来看Model够不够大。
-## 层数越多弹性越大就越不是Model Bias,排除法能看出来是不是Optimization
-## 线性层或者支持向量机这种简单的Model的Optimization是没有问题的.然后再试一下Deeper networks
+### 怎么看是上面哪种情况呢 ?
+### solution：比较不同的模型来看Model够不够大。
+层数越多弹性越大就越不是Model Bias,排除法能看出来是不是Optimization
+线性层或者支持向量机这种简单的Model的Optimization是没有问题的.然后再试一下Deeper networks
 
 ## loss on training data small
 
@@ -37,10 +37,10 @@
 
 # **一定要先看training loss**
 
-## public Testing Set 和 private Testing Set都要好,benchmark corpora(public)上面表现的好还要应用于private Testing Set.
+public Testing Set 和 private Testing Set都要好,benchmark corpora(public)上面表现的好还要应用于private Testing Set.
 
-# 把Training Set分成Training Set 和Validation Set
-## 如果怕分不好,就用N-fold Cross Validation,然后排列组合一下就可以又更好的评估方式
+把Training Set分成Training Set 和Validation Set
+如果怕分不好,就用N-fold Cross Validation,然后排列组合一下就可以又更好的评估方式
 
-# mismatch的原因和overfitting不一样.
-# mismatch:training data和testing data的distributuions不一样.
+mismatch的原因和overfitting不一样.
+mismatch:training data和testing data的distributuions不一样.
